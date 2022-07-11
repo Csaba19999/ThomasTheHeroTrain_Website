@@ -134,7 +134,7 @@ function NewReviewForm() {
       rating: Number(rating),
     };
     await addReviewHandeler(enteredReviewData);
-    //await history.replace("/");
+    await history.replace("/");
   };
 
   return (
