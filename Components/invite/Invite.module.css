@@ -1,0 +1,81 @@
+.thomasInvite{
+    margin: 10px 0px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    background-color: rgb(56, 56, 75);
+    border-radius: 15px;
+    width: 95%;
+    
+}
+.thomasLink{
+    color: black;
+    font-size: 17px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    background-color: whitesmoke;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+}
+.copy{
+    color: black;
+    font-size: 17px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    background-color: whitesmoke;
+    margin: 0px 10px;
+    padding: 0px 20px;
+    border: none;
+    transition: all 0.2s ease-in-out;
+}
+.copy:hover{
+    transition: all 0.2s ease-in-out;
+    border-radius: 10px;
+}
+.clicked{
+    animation: clicked 1s ease-in-out;
+}
+
+@media screen and (max-width: 950px){ 
+    .thomasInvite{
+        flex-direction: column;
+    }
+    .copy{
+        margin: 10px 0px;
+        padding: 10px;
+    }
+}
+@media screen and (max-width: 810px){
+    .thomasLink{
+        color: black;
+        font-size: 14px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        background-color: whitesmoke;
+        padding: 10px;
+        border-radius: 10px;
+        width: 100%;
+        /*brake text affter lethers*/
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        
+    }
+}
+
+@keyframes clicked{
+    0%{
+        box-shadow: none;
+    }
+    50%{
+        box-shadow: rgb(21, 255, 0) 0px 0px 5px 5px;
+    }
+    100%{
+        box-shadow: none;
+    }
+}
+
+

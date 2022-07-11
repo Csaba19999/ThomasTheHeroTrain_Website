@@ -1,0 +1,96 @@
+.review {
+  width: 350px;
+  width: 350px;
+  height: 230px;
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas:
+    "i u . ."
+    "d d d d"
+    "b b s s";
+  border-radius: 15px;
+  padding: 10px;
+  margin: 10px;
+  background-color: whitesmoke;
+}
+.image {
+  grid-area: i;
+}
+.date{
+  grid-area: b;
+}
+.userName {
+  grid-area: u;
+}
+.userDescription {
+  grid-area: d;
+}
+.score {
+  grid-area: s;
+}
+
+.image {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 60px;
+  height: 60px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.image img {
+  width: 150%;
+  position: relative;
+  margin: 0 auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.image {
+  
+}
+.userName {
+  margin: 5px 0px;
+}
+.userDescription {
+  height: 95px;
+  overflow-y: scroll;
+  margin: 0px;
+}
+.userDescription {
+    scrollbar-width: thin;
+    scrollbar-color: black transparent;
+  }
+  
+  .userDescription::-webkit-scrollbar {
+    width: 3px;
+  }
+  
+  .userDescription::-webkit-scrollbar-track {
+    background: transparent;
+    padding: 2px;
+  }
+  
+  .userDescription::-webkit-scrollbar-thumb {
+    background-color: rgb(61, 145, 255);
+  }
+
+
+.score {
+  margin: 10px auto;
+  font-size: 16px; 
+  font-weight: 500;
+}
+.date{
+  margin: auto 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.score::before{
+    content:"Értékelés: ";
+}
+.score span{
+    color: rgb(228, 164, 0);
+}
+
+

@@ -1,0 +1,18 @@
+.home{
+    margin-top: 30px;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.home h1 {
+    color: white;
+}
+
+@media screen and (max-width: 650px){
+    .home{
+        margin-top: 0px;
+    }
+    
+}

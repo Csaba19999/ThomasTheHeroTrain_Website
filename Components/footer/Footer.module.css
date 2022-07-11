@@ -1,0 +1,108 @@
+.footer {
+  display: grid;
+  grid-template-columns: 25% 25% 25%;
+  grid-template-areas:
+    "ll ll ll"
+    "c d i"
+    "l l l"
+    "f f f";
+  justify-items: center;
+  align-items: start;
+  align-content: center;
+  justify-content: space-evenly;
+  margin-top: 30px;
+  background-color: rgb(44, 44, 58);
+  color: white;
+}
+.contact {
+  grid-area: c;
+}
+.description {
+  grid-area: d;
+}
+.socialMedia {
+  grid-area: i;
+}
+.footerCopiright {
+  grid-area: f;
+}
+.line {
+  grid-area: l;
+}
+.linee {
+  grid-area: ll;
+}
+.icons ul{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0;
+}
+.icons ul li{
+  width: 50px;
+  height: 50px;
+  margin: 0px 10px;
+}
+.icons ul li a {
+  z-index: 1;
+  width: 50px;
+  height: 50px;
+}
+.icons ul li a img {
+  width: 50px;
+  height: 50px;
+}
+.icons {
+  display: flex;
+}
+.line,
+.linee {
+  margin: 20px 0px;
+  width: 100%;
+  border: 1px solid white;
+}
+
+.socialMedia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.footer .icons{
+    display: flex;
+    justify-content: center;
+}
+.description {
+  text-align: center;
+}
+
+.email::before {
+  content: "\ Email: ";
+  display: block;
+}
+.discord::before {
+  content: "\ Discord: ";
+  display: block;
+}
+
+
+@media screen and (max-width: 650px) {
+  .footer {
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    grid-template-areas:
+      "ll ll ll ll"
+      "d d d d"
+      "c c i i"
+      "l l l l"
+      "f f f f";
+    justify-items: center;
+    align-items: start;
+    align-content: center;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    background-color: rgb(44, 44, 58);
+    color: white;
+  }
+}

@@ -1,0 +1,55 @@
+.reviews{
+    display: flex;
+    width: 95%;
+    background-color: rgb(56, 56, 75);
+    border-radius: 15px;
+    margin: 10px;
+    overflow-x: hidden;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    scrollbar-width: thin;
+    scrollbar-color: black transparent;
+    padding-bottom: 20px;
+}
+.reviewHolder{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  animation: animatedBackground 75s infinite linear;
+}
+  
+  .reviews::-webkit-scrollbar {
+    height: 10px;
+  }
+  
+  .reviews::-webkit-scrollbar-track {
+    background: transparent;
+    padding: 2px;
+  }
+  
+  .reviews::-webkit-scrollbar-thumb {
+    background-color: rgb(61, 145, 255);
+    border-radius: 15px;
+  }
+
+  .newReviewButton{
+    margin: auto;
+    padding: 15px;
+    background-color: rgb(61, 145, 255);  
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  @keyframes animatedBackground {
+    0% {
+      left: 0%;
+    }
+    50%{
+      left: -76%;
+    }
+    100%{
+      left: 0%;
+    }
+  }
+

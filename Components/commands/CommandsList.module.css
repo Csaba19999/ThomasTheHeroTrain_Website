@@ -1,0 +1,16 @@
+.commandsList{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.commandsList img {
+    width: 600px;
+}
+
+@media screen and (max-width: 650px) {
+    .commandsList img {
+        width: 350px;
+    }
+}
