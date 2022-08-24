@@ -23,7 +23,7 @@ export async function getStaticProps() {
   const res = await fetch("https://discord.com/api/v9/users/@me/guilds", {
     headers: {
       Authorization:
-        "Bot ODMwNzUzMzY0NDY2OTkxMTI1.YHLRXA.KpWL7pWqSt7aVLL4ltLZQ5KOres",
+        `Bot ${process.env.THOMAS_TOKEN}`,
     },
   });
   const data = await res.json();
@@ -34,7 +34,7 @@ export async function getStaticProps() {
     const resM = await fetch(`https://canary.discord.com/api/v9/guilds/${data[index].id}?with_counts=true`, {
     headers: {
       Authorization:
-        "Bot ODMwNzUzMzY0NDY2OTkxMTI1.YHLRXA.KpWL7pWqSt7aVLL4ltLZQ5KOres",
+      `Bot ${process.env.THOMAS_TOKEN}`,
     },
   });
   const members = await resM.json();
@@ -51,7 +51,7 @@ export async function getStaticProps() {
   }
 
   const client = await MongoClient.connect(
-    "mongodb+srv://Csaba1999:Xls50h..@thomasdcdatabase.64vbjp7.mongodb.net/?retryWrites=true&w=majority"
+    `mongodb+srv://${process.env.DATABASE_CONNECT_NAME}:${process.env.DATABASE_CONNECT_PASSWORD}@thomasdcdatabase.64vbjp7.mongodb.net/?retryWrites=true&w=majority`
   );
   const db = client.db();
   const reviewsCollection = db.collection("reviews");
