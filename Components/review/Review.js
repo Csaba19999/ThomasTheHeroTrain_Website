@@ -1,7 +1,6 @@
 import classes from "./Review.module.css";
 
 function Review(props) {
-  console.log(props.profileImage);
   return (
     <div className={classes.review}>
       <div className={classes.image}>
