@@ -6,7 +6,7 @@ function Command(props) {
 
   let wordCommand = props.command.split(" ");
   let coloredComand = [];
-  coloredComand.push(<span  className={classes.fel} style={{ color: "red" }}>{"!"}</span >);
+  coloredComand.push(<span  className={classes.fel} style={{ color: "red" }}>{"/"}</span >);
   for (let i = 0; i < wordCommand.length; i++) {
     if (wordCommand[i] === "@username") {
       coloredComand.push(<span  style={{ color: "green" }}>{wordCommand[i]}</span >);
