@@ -49,7 +49,7 @@ export async function getStaticProps() {
   guilds.push(guild);
   
   }
-
+  console.log(process.env.DATABASE_CONNECT_NAME);
   const client = await MongoClient.connect(
     `mongodb+srv://${process.env.DATABASE_CONNECT_NAME}:${process.env.DATABASE_CONNECT_PASSWORD}@thomasdcdatabase.64vbjp7.mongodb.net/?retryWrites=true&w=majority`
   );
